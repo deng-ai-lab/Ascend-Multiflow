@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fidia-ascend"
+version = "0.1.0rc1"
+description = "Unofficial Ascend runtime adapter for the original FIDIA motif code"
+readme = "README.md"
+requires-python = ">=3.10,<3.11"
+license = {file = "LICENSE"}
+dependencies = []
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Programming Language :: Python :: 3.10",
+  "Operating System :: POSIX :: Linux",
+  "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
+
+[project.scripts]
+fidia-ascend = "fidia_ascend.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["fidia_ascend*"]
+
+[tool.setuptools]
+license-files = ["LICENSE", "NOTICE_ASCEND.md"]

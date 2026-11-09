@@ -1,0 +1,5 @@
+# ablations
+CUDA_VISIBLE_DEVICES=2,3 accelerate launch --config_file config/multi_gpu.yaml --num_processes=2 src/main.py --config config/FIDIA.py:GRPO --config.run_name_wandb="FIDIA" --config.EXPTAG=$(date +"%Y%m%d_%H%M%S") --config.task=motif
+CUDA_VISIBLE_DEVICES=2,3 accelerate launch --config_file config/multi_gpu.yaml --num_processes=2 src/main.py --config config/FIDIA.py:GRPO --config.run_name_wandb="FIDIA" --config.EXPTAG=$(date +"%Y%m%d_%H%M%S") --config.task=motif --ablation.mode=peak
+CUDA_VISIBLE_DEVICES=2,3 accelerate launch --config_file config/multi_gpu.yaml --num_processes=2 src/main.py --config config/FIDIA.py:GRPO --config.run_name_wandb="FIDIA" --config.EXPTAG=$(date +"%Y%m%d_%H%M%S") --config.task=motif --ablation.mode=peaks
+CUDA_VISIBLE_DEVICES=2,3 accelerate launch --config_file config/multi_gpu.yaml --num_processes=2 src/main.py --config config/FIDIA.py:GRPO --config.run_name_wandb="FIDIA" --config.EXPTAG=$(date +"%Y%m%d_%H%M%S") --config.task=motif --ablation.mode=topk

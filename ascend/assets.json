@@ -1,0 +1,54 @@
+{
+  "assets": [
+    {
+      "name": "data_bmk.tar.gz",
+      "url": "https://zenodo.org/api/records/20353469/files/data_bmk.tar.gz/content",
+      "size": 9547591,
+      "sha256": "08f84086ea13f53f075f70533338fafc3ff8db9326b6b0fa57469d85ea293dd8",
+      "target": "../fidia-downloads/data_bmk.tar.gz"
+    },
+    {
+      "name": "data_motif_task.tar.gz",
+      "url": "https://zenodo.org/api/records/20353469/files/data_motif_task.tar.gz/content",
+      "size": 857996803,
+      "sha256": "8b7877b8b00ff83dece19ba3f5b0f593efe72154af2653282b3d940c493951c3",
+      "target": "../fidia-downloads/data_motif_task.tar.gz"
+    },
+    {
+      "name": "esmfold_3B_v1.pt",
+      "url": "https://dl.fbaipublicfiles.com/fair-esm/models/esmfold_3B_v1.pt",
+      "size": 2771653574,
+      "sha256": "e9a52579027e77d2d2e0a18218e755821f395730e86624cab9413dc117f5ca62",
+      "target": "../fidia-assets/torch/hub/checkpoints/esmfold_3B_v1.pt"
+    },
+    {
+      "name": "esm2_t36_3B_UR50D.pt",
+      "url": "https://dl.fbaipublicfiles.com/fair-esm/models/esm2_t36_3B_UR50D.pt",
+      "size": 5678116398,
+      "sha256": "7de8b4082ba15891959ab368b77ce3886697af1efb16d3c9e9e7b0c5d3f07500",
+      "target": "../fidia-assets/torch/hub/checkpoints/esm2_t36_3B_UR50D.pt"
+    },
+    {
+      "name": "esm2_t36_3B_UR50D-contact-regression.pt",
+      "url": "https://dl.fbaipublicfiles.com/fair-esm/regression/esm2_t36_3B_UR50D-contact-regression.pt",
+      "size": 6759,
+      "sha256": "4da500eab246481dc9c8c95bc7b1d02f2803d761c380b0e95186d4a07d0fc84e",
+      "target": "../fidia-assets/torch/hub/checkpoints/esm2_t36_3B_UR50D-contact-regression.pt"
+    },
+    {
+      "name": "proteinmpnn_v_48_020.pt",
+      "url": "https://files.ipd.uw.edu/pub/ligandmpnn/proteinmpnn_v_48_020.pt",
+      "size": 6681301,
+      "sha256": "c9cb4a671d79604111231f8dbfc7c590e06f1197453b7a6854ac6661a642f5bd",
+      "target": "../fidia-assets/weights/proteinmpnn_v_48_020.pt"
+    },
+    {
+      "name": "motif-IAPO.pt",
+      "url": "https://raw.githubusercontent.com/deng-ai-lab/FIDIA-code/eef3bff91f7d7ea7e6e03933d5fdc8d2b4d0151d/data/ckpt/motif-IAPO.pt",
+      "target": "../fidia-assets/weights/motif-IAPO.pt",
+      "size": 6676306,
+      "sha256": "8bf5884dc1bea34caa6ad755d5a59015da6eb97fff83c836ec457ee312f3e450"
+    }
+  ],
+  "large_ESM_weights_and_training_data_bundled": false
+}

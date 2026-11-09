@@ -1,0 +1,11 @@
+name: fidia-ascend
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10.12
+  - pip=24.3.1
+  - setuptools=68.1.2
+  - wheel
+# This bootstraps Python only. After activation, source the matching CANN
+# environment and run: bash ascend/install.sh
+# The complete tested Python dependency set is requirements-ascend.lock.txt.

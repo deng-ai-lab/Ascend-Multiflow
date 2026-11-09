@@ -1,0 +1,3 @@
+CUDA_VISIBLE_DEVICES=2,3 accelerate launch --config_file config/multi_gpu.yaml --num_processes=2 src/main.py --config config/FIDIA.py:EVAL --config.EXPTAG=$(date +"%Y%m%d_%H%M%S") --config.task=motif --config.checkpoint_path=data/ckpt/motif-IAPO.pt
+
+CUDA_VISIBLE_DEVICES=0,1,2,3 accelerate launch --config_file config/multi_gpu.yaml --num_processes=4 src/main.py --config config/FIDIA.py:EVAL --config.EXPTAG=$(date +"%Y%m%d_%H%M%S") --config.task=ligand --config.checkpoint_path=data/ckpt/ligand-IAPO.pt

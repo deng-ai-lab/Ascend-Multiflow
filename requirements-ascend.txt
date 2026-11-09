@@ -1,0 +1,2 @@
+# Run from repository root; native OpenFold install is handled separately.
+-r requirements-ascend.lock.txt
